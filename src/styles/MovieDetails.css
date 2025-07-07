@@ -1,0 +1,38 @@
+.movie-details {
+  padding-top: 60px;
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+}
+
+.movie-details img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-details img:not([src]) {
+  background-color: #333;
+}
+
+.details-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trailer iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .movie-details img {
+    height: 300px;
+  }
+  .trailer iframe {
+    height: 200px;
+  }
+}

@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reverted from 18px */
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links li a,
+.nav-links li button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover,
+.nav-links li button:hover {
+  color: #e50914;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  right: -20px; /* Reverted from -10px */
+  width: 250px; /* Reverted from 220px */
+  z-index: 1001;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #444;
+  color: white;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #b20710;
+}
+
+.search-results {
+  position: absolute;
+  top: 80px;
+  right: -20px; /* Reverted from -10px */
+  background: #141414;
+  border: 1px solid #333;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 250px; /* Reverted from 220px */
+  z-index: 1001;
+  padding: 10px;
+}
+
+.search-results p {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 15px;
+  }
+  .nav-links {
+    gap: 8px; /* Reverted from 6px */
+  }
+  .nav-links li a,
+  .nav-links li button {
+    font-size: 13px; /* Reverted from 12px */
+  }
+  .search-bar {
+    width: 180px; /* Reverted from 160px */
+    right: 0;
+  }
+  .search-results {
+    width: 180px; /* Reverted from 160px */
+    right: 0;
+  }
+}

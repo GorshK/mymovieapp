@@ -1,0 +1,13 @@
+.browse {
+  padding-top: 60px;
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
