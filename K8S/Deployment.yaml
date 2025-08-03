@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-movieapp-container
-        image: gorshk/my-movieapp 
+        image: "202516164812.dkr.ecr.us-east-1.amazonaws.com/gorsh"
         ports:
         - containerPort: 80
         resources:
@@ -25,3 +25,18 @@ spec:
           requests:
             cpu: "200m"
             memory: "256Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-movieapp-service
+  namespace: movie-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-movieapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
