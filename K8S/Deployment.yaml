@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-movieapp-container
-        image: "202516164812.dkr.ecr.us-east-1.amazonaws.com/gorsh"
+        image: "202516164812.dkr.ecr.us-east-1.amazonaws.com/gorsh:bcf7bb11e3e94d9f9b58d80a4830ea9aa26338ed"
         ports:
         - containerPort: 80
         resources:
