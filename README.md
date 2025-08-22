@@ -104,7 +104,7 @@ eksctl create cluster --name my-movieapp-cluster --region <region> --nodegroup-n
 Takes ~15-20 minutes. Then configure kubectl:
 
 bash
-aws eks update-kubeconfig --name my-movieapp-cluster --region <region
+aws eks update-kubeconfig --name my-movieapp-cluster --region <region>
 Deploy to EKS:
 
 Update k8s/deployment.yaml with your ECR image URI:
