@@ -96,6 +96,7 @@ aws ecr create-repository --repository-name my-movieapp --region <region>
 aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
 docker tag my-movieapp:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/my-movieapp:latest
 docker push <aws_account_id>.dkr.ecr.<region>.amazonaws.com/my-movieapp:latest
+
 Create an EKS Cluster:
 
 bash
