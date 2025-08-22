@@ -71,7 +71,7 @@ Run the App Locally:
 
 bash
 npm start
-Open http://localhost:3000 in your browser. Navigate to Home, Browse, Search, and Watchlist pages to test functionality.
+Open http://localhost:3000 in your browser. Navigate to Home, Browse, Search, and Watchlist pages to test functionality
 
 Docker Setup
 Build the Docker Image:
@@ -82,7 +82,7 @@ Run the Container Locally:
 
 bash
 docker run -p 3000:80 my-movieapp:latest
-Access the app at http://localhost:3000. Verify all features (Browse, Search, Watchlist) work as expected.
+Access the app at http://localhost:3000. Verify all features (Browse, Search, Watchlist) work as expected
 
 Troubleshooting:
 
